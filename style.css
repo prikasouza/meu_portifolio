@@ -10,6 +10,7 @@
   --color-black: #130E13;
   --color-pink: #e11577;
   --fundo-um:#780387;
+  --color-grey:#191919;
 }
 
 .bg {
@@ -116,32 +117,123 @@ font-size: 40px;
 }
 
 .project {
-  background: #191919;
+  background:var(--color-grey);
   color: var(--color-white);
+ 
+  
 }
 
 .project h2 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 35px;
+  font-size: 55px;
+  text-align: center;
+  padding-top: 50px;
 }
 
 .card {
   background-color: var(--color-black);
-  height: 365px;
   width: 335px;
   border-radius: 20px;
-  padding: 20px 35px;
+  padding: 25px 35px;
   text-align: center;
+  margin-bottom: 55px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
 
 .card img {
   height: 100px;
+  
 }
 
 .card h5 {
   font-size: 24px;
-  padding: 10px 0;
+  padding-top: 7px;
 }
+
+.card p {
+  padding-top: 20px;
+  margin-bottom: 14px;
+  font-family: "Nunito", sans-serif;
+  opacity: 0.5;
+ 
+}
+
+.cadrs-project {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+
+}
+.card-btn{
+  background-color: var(--color-pink);
+  border-radius: 8px;
+  text-decoration: none;
+  color:var(--color-black);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  box-shadow: rgba(59, 58, 58, 0.24) 0px 3px 8px;
+  
+}
+
+.icon-tec{
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 35px;
+  padding: 10px;
+  opacity: .5;
+  border-radius: 5px;
+}
+.social-card{
+padding-bottom: 10px;
+}
+.card-content{
+ padding-bottom: 10px;
+ overflow: hidden;
+ height: 0;
+ transition: all 0.5s;
+}
+
+.card-content:hover{
+  height: 275px;
+  transition: 0.5s;
+}
+
+
+.whatsapp i:hover {
+    animation: translateY 0.8s infinite alternate;
+   color: #04bc41;
+
+}
+
+footer {
+  background-color: var(--color-black);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h5{
+  font-size: 35px;
+
+}
+footer p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 14px;
+}
+.social i {
+ color: #e11577;
+ margin: 7px;
+}
+
+
 
 @keyframes translateY {
   from{
