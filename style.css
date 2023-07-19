@@ -9,8 +9,12 @@
   --color-white: white;
   --color-black: #130E13;
   --color-pink: #e11577;
-  --fundo-um:#780387;
   --color-grey:#191919;
+  --git:#780387;
+  --linkedin: #0e76a8;
+  --whats: #04bc41;
+  --site:rgb(53, 95, 194);
+  
 }
 
 .bg {
@@ -80,12 +84,12 @@ font-size: 40px;
 
 .linkedin i:hover{
      animation: translateY 0.8s infinite alternate;
-    color: #0e76a8;
+    color: var(--linkedin);
  }
 
  .github i:hover{
      animation: translateY 0.8s infinite alternate;
-    color: #780387;
+    color:var(--git);
  }
 
 .sobre {
@@ -189,7 +193,24 @@ font-size: 40px;
 }
 .social-card{
 padding-bottom: 10px;
+font-size: 20px;
+
 }
+
+.social-card a{
+  color: var(--color-white);
+
+}
+
+.git_projetc:hover{
+  animation: translateY 0.8s infinite alternate;
+ color: var(--git);
+}
+.ver_site:hover{
+  animation: translateY 0.8s infinite alternate;
+ color: var(--site);
+}
+
 .card-content{
  padding-bottom: 10px;
  overflow: hidden;
@@ -205,12 +226,13 @@ padding-bottom: 10px;
 
 .whatsapp i:hover {
     animation: translateY 0.8s infinite alternate;
-   color: #04bc41;
+   color: var(--whats);
 
 }
 
 footer {
   background-color: var(--color-black);
+  color: var(--color-white);
   padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
@@ -229,7 +251,7 @@ footer p {
   margin-top: 14px;
 }
 .social i {
- color: #e11577;
+ color: var(--color-pink);
  margin: 7px;
 }
 
